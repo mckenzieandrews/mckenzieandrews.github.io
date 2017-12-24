@@ -1,3 +1,4 @@
+var pokemons = [];
 
 var Pokemon = class Pokemon {
   constructor(String name, String type, int hp, int def, int atk, boolean legend) {
@@ -7,6 +8,12 @@ var Pokemon = class Pokemon {
     this.def= def; 
     this.atk = atk; 
     this.legend= legend;
+    
+    //how do you use an array to keep track of all the pokemons for all() method?
+    //need to fix!
+    var p = new Pokemon(name);
+    pokemons.push(p);
+    
   }
   
   attack(Pokemon poke){
@@ -25,9 +32,15 @@ var Pokemon = class Pokemon {
       }  
   }
   
+  
+ //return all the pokemons-- does this work? idk!?! 
  all(){
-   
-   //return all the pokemons 
+   var i;
+   var allThePokes="";
+   for (i=0; i<pokemons.length; i++){
+    allThePokes + = pokemons[i] + " "; 
+   }
+   return allThePokes;
   }
   
   get name() {
