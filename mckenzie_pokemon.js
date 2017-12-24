@@ -14,7 +14,18 @@ var Pokemon = class Pokemon {
   return poke.hp;    
   }
   
+  aliveCheck(}{
   
+     //if hp is greater than 0, return true
+             
+     // else return false 
+             
+  }
+  
+ all(){
+   
+   //return all the pokemons 
+  }
   
   get name() {
   return this.name; 
