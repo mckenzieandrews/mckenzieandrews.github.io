@@ -15,11 +15,14 @@ var Pokemon = class Pokemon {
   }
   
   aliveCheck(}{
-  
-     //if hp is greater than 0, return true
-             
-     // else return false 
-             
+    //if hp is greater than 0, return true
+     if(this.hp> 0){
+         return true; 
+      }
+      else{
+      // else return false 
+      return false; 
+      }  
   }
   
  all(){
