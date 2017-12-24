@@ -9,7 +9,10 @@ var Pokemon = class Pokemon {
     this.legend= legend;
   }
   
-  
+  attack(Pokemon poke){
+  poke.sethp(poke.hp- (this.atk-poke.def);
+  return poke.hp;    
+  }
   
   
   
@@ -31,6 +34,10 @@ var Pokemon = class Pokemon {
    
   get hp() {
   return this.hp; 
+  }
+  
+  set hp(p){
+   this.hp = p; 
   }
   
   get def() {
