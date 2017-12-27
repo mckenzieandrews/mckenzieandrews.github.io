@@ -1,7 +1,12 @@
 var pokemons = [];
 
 var Pokemon = class Pokemon {
-  constructor(String name, String type, int hp, int def, int atk, boolean legend) {
+  constructor(typeof name === "string", 
+               typeof type === "string", 
+               typeof hp ==="number", 
+               typeof def === "number", 
+               typeof atk=== "number", 
+               typeof legend=== "boolean") {
     this.name = name;
     this.type= type;
     this.hp = hp;
@@ -12,24 +17,23 @@ var Pokemon = class Pokemon {
     //how do you use an array to keep track of all the pokemons for all() method?
     //need to fix!
     var p = new Pokemon(name);
-    pokemons.push(p);
-    
+    pokemons.push(p);  
   }
   
   attack(Pokemon poke){
   poke.sethp(poke.hp- (this.atk-poke.def);
   return poke.hp;    
   }
-  
-  aliveCheck(}{
+ 
+ aliveCheck(}{
     //if hp is greater than 0, return true
-     if(this.hp> 0){
-         return true; 
-      }
-      else{
-      // else return false 
-      return false; 
-      }  
+ if(this.hp> 0){
+    return true; 
+    }
+ else{
+ // else return false 
+    return false; 
+    }  
   }
   
   
